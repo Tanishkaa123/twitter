@@ -27,7 +27,7 @@
 
       <div class="sidebar w-64 p-4">
 
-        <ul class="flex flex-col text-xl space-y-3 font-bold">
+        <ul class="flex flex-col text-xl space-y-3 ">
 
           <li class="flex items-center gap-3 hover:bg-gray-800 rounded-full cursor-pointer px-5 py-3">
             <span class="material-symbols-outlined">home</span> Home
@@ -40,25 +40,17 @@
           <li class="flex items-center gap-3 hover:bg-gray-800 rounded-full cursor-pointer px-5 py-3">
             <span class="material-symbols-outlined">notifications</span> Notifications
           </li>
+         
+          <li class="flex items-center gap-3 hover:bg-gray-800 rounded-full cursor-pointer px-5 py-3">
+            <span class="material-symbols-outlined">account_circle</span> Follow
+          </li>
 
           <li class="flex items-center gap-3 hover:bg-gray-800 rounded-full cursor-pointer px-5 py-3">
             <span class="material-symbols-outlined">smart_toy</span> Grok
           </li>
 
           <li class="flex items-center gap-3 hover:bg-gray-800 rounded-full cursor-pointer px-5 py-3">
-            <span class="material-symbols-outlined">lists</span> Lists
-          </li>
-
-          <li class="flex items-center gap-3 hover:bg-gray-800 rounded-full cursor-pointer px-5 py-3">
-            <span class="material-symbols-outlined">bookmark</span> Bookmarks
-          </li>
-
-          <li class="flex items-center gap-3 hover:bg-gray-800 rounded-full cursor-pointer px-5 py-3">
-            <span class="material-symbols-outlined">groups</span> Communities
-          </li>
-
-          <li class="flex items-center gap-3 hover:bg-gray-800 rounded-full cursor-pointer px-5 py-3">
-            <span class="material-symbols-outlined">workspace_premium</span> Premium
+            <span class="material-symbols-outlined">chat_bubble</span> Chat
           </li>
 
           <li class="flex items-center gap-3 hover:bg-gray-800 rounded-full cursor-pointer px-5 py-3">
@@ -73,6 +65,14 @@
         <div class="button">
             <button class="bg-white px-1 py-3 rounded-full text-black font-bold w-full mt-4 hover:bg-gray-500">Post</button>
         </div>
+        <div class="profile flex items-center gap-2 hover:bg-[#16181c] cursor-pointer rounded-full px-3 py-2 mt-2 w-fit">
+           <img src="https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" alt="" class="w-10 h-10 rounded-full">
+           <div class="flex flex-col">
+              <span class="font-bold text-white whitespace-nowrap">Tanishkaa Mathur</span>
+              <span class="text-gray-500 text-sm">@TanishkaaM</span>           
+             </div>
+           <span class="material-symbols-outlined ml-4 text-gray-300">more_horiz</span>
+         </div>
       </div>
     </div>
 
@@ -92,24 +92,30 @@
             class="w-12 h-12 rounded-full">
         </div>
         <div class="w-full">
-          <input type="text" placeholder="What's happening?!"
-            class="w-full h-7 my-2 text-xl bg-transparent p-4 outline-none">
+          <input type="text" placeholder="What's happening?" class="w-full h-7 my-2 text-xl bg-transparent p-4 outline-none">
+          <div class="text-blue-600 flex items-center gap-3 w-full my-4">
+            <span class="material-symbols-outlined">globe_asia</span>
+            <span>Everyone can reply</span>
+          </div>
           
-          
-          <div class="blueicons flex gap-4 cursor-pointer text-gray-300 pl-2">
-            <span class="material-symbols-outlined">image</span>
-            <span class="material-symbols-outlined">gif_box</span>
-            <span class="material-symbols-outlined">smart_toy</span>
-            <span class="material-symbols-outlined">ballot</span>
-            <span class="material-symbols-outlined">mood</span>
-            <span class="material-symbols-outlined">calendar_clock</span>
-            <span class="material-symbols-outlined">location_on</span>
-            <span class="material-symbols-outlined">flag_2</span>
-            <button class="bg-white px-3 py-1 rounded-full text-black font-bold ml-auto mr-3 hover:bg-gray-500">Post</button>
+          <div class="w-[95%] h-[0.2px] bg-gray-700"></div>
+          <div class="blueicons flex gap-4 pt-4 text-gray-300 pl-2">
+            <span class="material-symbols-outlined  cursor-pointer">image</span>
+            <span class="material-symbols-outlined cursor-pointer">gif_box</span>
+            <span class="material-symbols-outlined cursor-pointer">smart_toy</span>
+            <span class="material-symbols-outlined cursor-pointer">ballot</span>
+            <span class="material-symbols-outlined cursor-pointer">mood</span>
+            <span class="material-symbols-outlined cursor-pointer">calendar_clock</span>
+            <span class="material-symbols-outlined text-gray-600 opacity-50">location_on</span>
+            <span class="material-symbols-outlined cursor-pointer">flag_2</span>
+            <button class="bg-gray-500 text-black px-3 py-1 rounded-full font-bold opacity-50">Post</button>
           </div>
         </div>
       </div>
-      <div class="w-full h-[0.2px] bg-gray-600 my-3"></div>
+      <div class="w-full h-[0.2px] bg-gray-600"></div>
+      <div class="moreposts text-center text-blue-500 py-4 cursor-pointer border-b border-gray-800 hover:bg-[#16181c]">
+        Show more posts
+      </div>
     </div>
 
     <div class="third w-full">
@@ -148,13 +154,38 @@
         <h1 class="text-xl font-bold px-4 py-3">Who To Follow</h1>
 
         <div class="flex flex-col">
-          <div class="font-bold cursor-pointer text-gray-200 px-4 py-3 hover:bg-gray-800">Akshay Kumar</div>
-          <div class="font-bold cursor-pointer text-gray-200 px-4 py-3 hover:bg-gray-800 border-t border-gray-700">Virat
-            Kohli</div>
-          <div class="font-bold cursor-pointer text-gray-200 px-4 py-3 hover:bg-gray-800 border-t border-gray-700">
-            CodeWithHarry</div>
+          <div class="flex items-center px-4 py-3 hover:bg-gray-800 cursor-pointer">
+         <img src="https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" alt="" class="w-10 h-10 rounded-full">
+         <div class="flex flex-col ml-3">
+           <span class="font-bold text-white whitespace-nowrap">Akshay Kumar</span>
+           <span class="text-gray-500 text-sm">@akshaykumar</span>
+    </div>
+    <button class="ml-auto bg-white text-black font-bold px-4 py-1 rounded-full hover:bg-gray-300">Follow</button>  
+    </div>
+
+<div class="flex flex-col">
+          <div class="flex items-center px-4 py-3 hover:bg-gray-800 cursor-pointer">
+         <img src="https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" alt="" class="w-10 h-10 rounded-full">
+         <div class="flex flex-col ml-3">
+           <span class="font-bold text-white whitespace-nowrap">Virat Kohli</span>
+           <span class="text-gray-500 text-sm">@viratkohli</span>
+    </div>
+    <button class="ml-auto bg-white text-black font-bold px-4 py-1 rounded-full hover:bg-gray-300">Follow</button>  
+    </div>
+    
+<div class="flex flex-col">
+          <div class="flex items-center px-4 py-3 hover:bg-gray-800 cursor-pointer">
+         <img src="https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" alt="" class="w-10 h-10 rounded-full">
+         <div class="flex flex-col ml-3">
+           <span class="font-bold text-white whitespace-nowrap">Rohit Sharma</span>
+           <span class="text-gray-500 text-sm">@rohitsharma</span>
+             </div>
+             <button class="ml-auto bg-white text-black font-bold px-4 py-1 rounded-full hover:bg-gray-300">Follow</button>  
+           </div>
         </div>
-        <div class="px-4 py-3" style="color: #1d9bf0; text-decoration: underline; cursor: pointer;">Show more</div>
+
+
+        <div class="px-4 py-3 hover:bg-[#16181c]" style="color: #1d9bf0; text-decoration: underline; cursor: pointer;">Show more</div>
       </div>
     </div>
 
